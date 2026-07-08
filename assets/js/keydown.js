@@ -5,20 +5,10 @@ const ele = document.querySelector('#key');
 const ele2 = document.querySelector('#key2');
 const body = document.querySelector('body');
     if(ele == null && (e.key == 'a' || e.key == 'A' || e.key == 's' || e.key == 'S' || e.key == 'd' || e.key == 'D')){
-       let newEle = document.createElement('div');
-       body.appendChild(newEle);
-            newEle.style.width = '200px';
-            newEle.style.height = '200px';
-            newEle.style.border = '3px solid black'
-            newEle.id = 'key';  
+       createDivElement('key',body)  
         }
     if(ele2 == null && (e.key == 'q' || e.key == 'Q' || e.key == 'w' || e.key == 'W' || e.key == 'e' || e.key == 'E')){
-            let newEle2 = document.createElement('div');
-            body.appendChild(newEle2);
-            newEle2.style.width = '200px';
-            newEle2.style.height = '200px';
-            newEle2.style.border = '3px solid black'
-            newEle2.id = 'key2';
+            createDivElement('key2', body);
         }
         let element = document.querySelector('#key');
         if(e.key == 'a' || e.key == 'A'){
@@ -44,3 +34,12 @@ const body = document.querySelector('body');
         }
         }
     )
+
+    function createDivElement(id, body){
+        let newElemet = document.createElement('div');
+            body.appendChild(newElemet);
+            newElemet.id = id;
+            newElemet.style.width = '200px';
+            newElemet.style.height = '200px';
+            newElemet.style.border = '3px solid black'
+    }
