@@ -13,7 +13,8 @@ https://trejosd.github.io/desafioFunciones/
 - Primer ejercicio se encuentra dentro de archivo "1_funcion.js".
 - Segundo ejercicio se encuentra dentro de archivo "2_arrow.js".
 - Tercer ejercicio se encuentra con la union de los archivos "pintar.html, script.js".
-- Cuarto ejercicio se encuentra con la union de los archivos "keydown.html, keydown.js".
+- Cuarto ejercicio se encuentra con la union de los archivos "4_colores.html, 4_colores.js".
+- Quinto ejercicio se encuentra con la union de los archivos "keydown.html, keydown.js".
 
 ## Descripción
 
