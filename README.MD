@@ -18,7 +18,7 @@ https://trejosd.github.io/desafioFunciones/
 
 ## Descripción
 
-Proyecto muestra un landing page con los links a los ejercicios 3 y 4 localizado en githubpages.
+Proyecto muestra un landing page con los links a los ejercicios 3, 4 y 5 localizado en githubpages.
 
 ## Tecnologías Utilizadas
 
@@ -39,7 +39,7 @@ Proyecto muestra un landing page con los links a los ejercicios 3 y 4 localizado
     └── js
         ├── 1_funcion.js
         ├── 2_arrow.js
-        ├── colores.js
+        ├── 4_colores.js
         ├── keydown.js
         └── script.js
 
