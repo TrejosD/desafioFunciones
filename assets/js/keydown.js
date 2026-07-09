@@ -4,11 +4,12 @@ document.addEventListener('keydown', (e)=>{
 const ele = document.querySelector('#key');
 const ele2 = document.querySelector('#key2');
 const body = document.querySelector('body');
+
     if(ele == null && (e.key == 'a' || e.key == 'A' || e.key == 's' || e.key == 'S' || e.key == 'd' || e.key == 'D')){
-       createDivElement('key',body)  
+       createDivElement('key',createContainer(body))
         }
     if(ele2 == null && (e.key == 'q' || e.key == 'Q' || e.key == 'w' || e.key == 'W' || e.key == 'e' || e.key == 'E')){
-            createDivElement('key2', body);
+            createDivElement('key2', createContainer(body));
         }
         let element = document.querySelector('#key');
         if(e.key == 'a' || e.key == 'A'){
@@ -35,11 +36,26 @@ const body = document.querySelector('body');
         }
     )
 
-    function createDivElement(id, body){
+    function createContainer(body){
+        let container = document.querySelector('#box');
+        console.log('script ejecutado')
+        if(container == null){
+            var newBox = document.createElement('div');
+            body.appendChild(newBox);
+            newBox.id = 'box';
+            newBox.style.display = 'flex';
+            newBox.style.justifyContent = 'space-evenly';
+        }else{
+            var newBox = document.querySelector('#box');
+        }
+        return newBox;
+    }
+
+    function createDivElement(id, container){
         let newElemet = document.createElement('div');
-            body.appendChild(newElemet);
+            container.append(newElemet);
             newElemet.id = id;
             newElemet.style.width = '200px';
             newElemet.style.height = '200px';
-            newElemet.style.border = '3px solid black'
+            newElemet.style.border = '3px solid black';
     }
